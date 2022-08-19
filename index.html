@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка выпускника НГУ</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+    <h1 class="form_title">Анкета для получения карты выпускника НГУ</h1>
+    <div class="form">
+        <form action="#" id="form" class="form_body">
+            <div class="form_title_pretext">Заполните форму ниже для получния карты-пропуска в НГУ</div>
+            <h3 class="preTitle">О себе</h3>
+            <div class="form_item">
+                <label for="formSecondName" class="form-label">Фамилия*</label>
+                <input id="formSecondName" type="text" name="SecondName" class="form_input _req">
+            </div>
+            <div class="form_item">
+                <label for="formName" class="form-label">Имя*</label>
+                <input id="formName" type="text" name="name" class="form_input _req">
+            </div>
+            <div class="form_item">
+                <label for="formPatronymic" class="form-label">Отчество*</label>
+                <input id="formPatronymic" type="text" name="Patronymic" class="form_input _req">
+            </div>
+            <div class="form_item">
+                <div class="form_label">Пол*</div>
+                <div class="options">
+                    <div class="options_item">
+                        <input id="formMale" checked type="radio" value="Male" name="gender" class="options_input">
+                        <label for="formMale" class="options_label">Мужской</label>
+                    </div>
+                    <div class="options_item">
+                        <input id="formFemale" type="radio" value="Female" name="gender" class="options_input">
+                        <label for="formFemale" class="options_label">Женский</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form_item">
+                <label for="formBirthday"  class="form-label" >Дата рождения*</label>
+                <input id="formBirthday" type="date" name="Birthday" placeholder="DD/MM/YYYY" class="form_input _req">
+            </div>
+            <h3 class="preTitle">Контактная информация</h3>
+            <div class="form_item">
+                <label for="formEmail" class="form-label">E-mail*</label>
+                <input id="formEmail" type="text" name="email" class="form_input _email _req">
+            </div>
+            <div class="form_item">
+                <label for="formPhone" class="form-label">Телефон*</label>
+                <input id="formPhone" type="text" name="phone" class="form_input _req">
+            </div>
+            <div class="form_item">
+                <label for="formCountry" class="form-label">Страна</label>
+                <input id="formCountry" type="text" name="country" class="form_input">
+            </div>
+            <div class="form_item">
+                <label for="formCity" class="form-label">Город</label>
+                <input id="formCity" type="text" name="city" class="form_input">
+            </div>
+            <h3 class="preTitle">Обучение в НГУ</h3>
+
+            <div class="form_item">
+                <div class="form_label">Факультет*</div>
+                <div class="options2">
+                    <div class="options2_item">
+                        <input id="formMMF" checked type="radio" value="MMF" name="faculty" class="options_input">
+                        <label for="formMMF" class="options_label">ММФ</label>
+                    </div>
+                    <div class="options2_item">
+                        <input id="formFIT" type="radio" value="FIT" name="faculty" class="options_input">
+                        <label for="formFIT" class="options_label">ФИТ</label>
+                    </div>
+                    <div class="options2_item">
+                        <input id="formFEN" type="radio" value="FEN" name="faculty" class="options_input">
+                        <label for="formFEN" class="options_label">ФЕН</label>
+                    </div>
+                    <div class="options2_item">
+                        <input id="formFF" type="radio" value="FF" name="faculty" class="options_input">
+                        <label for="formFF" class="options_label">ФФ</label>
+                    </div>
+                    <div class="options2_item">
+                        <input id="formEF" type="radio" value="EF" name="faculty" class="options_input">
+                        <label for="formEF" class="options_label">ЭФ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_item">
+                <label for="formGrYear" class="form-label">Год выпуска*</label>
+                <input id="formGrYear" type="text" name="Year" class="form_input _req">
+            </div>
+
+            <h3 class="preTitle">Фотография</h3>
+            <div class="form_item">
+                <div class="form-label">Прикрепить фото</div>
+                <div class="file">
+                    <div class="file_item">
+                        <input id="formImage" accept=".jpg, .png" type="file" name="image" class="file_input">
+                        <div class="file_button">Выбрать</div>
+                    </div>
+                    <div id="formPreview" class="file_preview"></div>
+                </div>
+            </div>
+            <h3 class="preTitle">Согласие на обработку персональных данных</h3>
+
+
+            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox _req">
+            <label for="formAgreement" class="checkbox_label">Согласен на использование своих персональных
+                данных*</label>
+
+
+            <button type="submit" class="form_button">Далее</button>
+        </form>
+    </div>
+    </div>
+<script src="scripts/script.js"></script>
+</body>
+</html>
